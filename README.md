@@ -32,7 +32,7 @@ Repositorio que reúne todos los proyectos y ejercicios desarrollados durante el
 - (Opcional) PostgreSQL o MySQL según el proyecto.
 - Navegador web moderno para los proyectos frontend.
 
-#### Notas
+#### Notas Adicionales
 
 - Cada carpeta es independiente: las dependencias no están centralizadas.
 - Si algún script falla, revisar la versión de Node y el archivo `package.json` del proyecto en cuestión.
