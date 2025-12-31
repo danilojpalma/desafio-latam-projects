@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+body{
+    background-image: url(../img/BG.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    size: 100%;
+    color: white;
+    
+}
+
+
+.juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    width: 1000px;
+}
+
+.score{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    
+}
+
+.score p{
+    text-align: center;
+    padding: 10px;
+}
+
+.intro {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.5s ease;
+
+}
+
+.partida{
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+    
+
+}
+
+
+.intro h1{
+    font-size: 42px;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.intro h2{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.intro p {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.intro input{
+    padding: 10px 20px;
+    width: 100px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:#ffffff;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.intro button{
+    padding: 10px 30px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #FB008B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.titulo-rondas{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+}
+
+.jugadas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.jugadas h3{
+    text-align: center;
+    padding: 10px;
+    width: 300px ;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.opciones h3{
+    font-weight: 500;
+    text-align: center;
+    padding: 30px;
+}
+
+.player-hand{
+    transform: rotateY(180deg);
+}
+
+.opciones button{
+    padding: 10px 40px 10px;
+    margin: 0px 20px 10px 20px ;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #FB008B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.opciones button:hover{
+    background-color: #FF00FF;
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.reset button{
+    padding: 10px 40px 10px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #00eafb;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Mostrar y ocultar secciones */
+section.fadeOut{
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    
+}
+
+section.fadeIn{
+    opacity: 1;
+    transition: 0.5s;
+    pointer-events: all;
+}

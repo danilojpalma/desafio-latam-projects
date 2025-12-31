@@ -1,0 +1,71 @@
+
+/* Google Fonts | Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --info: #0DCAF0;
+  --grey: rgb(55, 58, 60);
+  
+  }
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body{
+  background-color: black;
+  
+}
+
+
+/* Navbar Section */
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.bg-scroll {
+  background-color: #333;
+}
+
+
+
+/* Carousel Section */
+
+.carousel-inner{
+  height: 100vh;
+}
+
+
+/* About Section */
+
+.wrapper-icon{
+  background-color: var(--info);
+}
+
+/* Footer section */
+
+footer{
+  background-color: var(--info);
+}
+
+/* Cards */
+.card-body{
+  background-color: var(--info);
+  color: white;
+
+}
+
+/* Ajustar la altura del carrusel en pantallas pequeñas */
+@media screen and (max-width: 708px) {
+/* Carousel Section */
+
+.carousel-inner{
+  height: auto;
+}
+
+}
+

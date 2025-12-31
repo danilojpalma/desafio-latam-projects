@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../imgs/fondo.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 20px 10px 10px 10px;
+  
+}
+
+/* Formulario */
+#tabla{
+  margin: 0;
+}
+
+#preview {
+  height: 190px;
+  background-image: url(../imgs/lion.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+/* Tabla de Participantes */
+
+#Animales {
+  height: 100%;
+  background: #f0f0f0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: start;
+  grid-row-gap: 0px;
+  grid-auto-rows: minmax(200px, auto);  
+
+}
+
+.wrapper{
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+.imgModal{
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imagen{
+  width: 120px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.btnPlay{
+  width: 120px;
+  height: 30px;
+  background-color: #4f4f4f;
+  border: none;
+  color: white;
+}
+
+
+#Animales div div {
+  transition: all 200ms;
+}
+
+#Animales div >div:hover {
+  box-shadow: 0px 1px 5px 1px;
+}
+
+.participante {
+  max-width: 30%;
+}
+
+/* Modal */
+
+

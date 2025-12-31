@@ -1,0 +1,37 @@
+    <h1>Skate Park</h1>
+
+    <div class="py-4">
+      <h2>Administración</h2>
+      <hr class="w-50" />
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Años de experiencia</th>
+            <th scope="col">Especialidad</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#if admin}}
+            {{#each admin}}
+              <tr>
+                <th scope="row">{{this.id}}</th>
+                <td class="d-flex justify-content-center"><div><img src="{{this.foto}}" alt="{{this.nombre}}" class="img-fluid" /></div></td>
+                <td>{{this.nombre}}</td>
+                <td>{{this.anos_experiencia}}</td>
+                <td>{{this.especialidad}}</td>
+                <td><input type="checkbox" {{#if this.estado}}checked{{/if}} onclick="updateEstado(this, {{this.id}})" /></td>              </tr>
+            {{/each}}
+          {{/if}}
+
+          <p><a href="/"> Volver al inicio</a></p>
+        </tbody>
+      </table>
+    </div>
+
+<script src="./assets/js/cambiarEstado.js"></script>
+ 

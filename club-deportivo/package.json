@@ -1,0 +1,22 @@
+{
+  "name": "club_deportivo_v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.6.8",
+    "bootstrap": "^4.5.2",
+    "express": "^4.19.2",
+    "jquery": "^3.7.1",
+    "nodemon": "^3.1.0"
+  }
+}

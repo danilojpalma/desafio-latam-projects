@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachipun</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    
+
+    <section class="juego">
+
+        <section class="intro">
+            <h2>Bienvenidos a</h2>
+            <h1>Piedra, papel o tijeras</h1>
+    
+            <p>Ingresa el número de victorias para ganar la partida</p>
+    
+            <input  id="ronda" placeholder="0" type="number" >
+    
+            <button>Comienza a jugar!</button>
+    
+        </section>
+
+        <section class="partida fadeOut">
+            <h1 class="titulo-rondas">Comenzar!</h1>
+            <div class="score">
+                <div class="puntaje-jugador">
+                    <h2>Tú</h2>
+                    <p>0</p>
+                </div>
+                <div>
+                    <p>Vs</p>
+                </div>
+                <div class="puntaje-pc">
+                    <h2>PC</h2>
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="jugadas">
+                <div>
+                    <img class="player-hand" width="250px" src="assets/img/Piedra.png" alt="">
+                </div>
+                <div><h3 class="ganador"></h3></div>
+                <div>
+                    <img class="pc-hand" width="250px" src="assets/img/Piedra.png" alt="">
+                </div>
+            </div>
+            <div class="opciones">
+                <h3>Selecciona una opcion</h3>
+                <div class="btn-opciones">
+                    <button>Piedra</button>
+                    <button>Papel</button>
+                    <button>Tijeras</button>
+                </div>
+            
+            </div>
+            <div class="reset">
+                <button onclick="location.reload()">Juega otra partida</button>
+            </div>
+        </section>
+
+
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
